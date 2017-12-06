@@ -1,9 +1,12 @@
-var fs = require('fs')
-var file = '/home/ubuntu/workspace/labs_wmdd4935/Text.txt'
+var fs = require('fs');
 
-fs.readFile(file, function (error, contents) {
-      if (error) throw error;
-      var data=contents.toString();
-     var lines = data.split('\n').length - 1
-  console.log(lines)
-})
+fs.readFile(process.argv[2], function(err, data) {
+    if (!err) {
+        var str = data.toString();
+        var strArray = str.split('\n');
+        console.log(strArray.length - 1);
+    };
+});
+
+
+

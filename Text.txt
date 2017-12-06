@@ -1,6 +1,6 @@
-Welcome to node js
-qqq
-qqq
+nvm install 9.2.0
 
+npm install -g learnyounode
 
-qqq
+learnyounode
+
